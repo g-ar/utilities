@@ -20,12 +20,14 @@ def get_pages(url, n_pages):
              border: thin silver solid;
              margin: 0.5em;
              padding: 0.5em;
+             width: 100%;
+             max-width: 1500px;
          }
 
          figcaption {
              display: table-caption;
              caption-side: top;
-             font-size: 2em;
+             font-size: 1.5em;
          }
         </style>
     </head>
