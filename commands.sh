@@ -23,4 +23,6 @@ for f in *.JPG; do
   mogrify -path $DIR -resize 50% $f
 done
 
-# 
+# 5. list all reset flags in packet capture
+tshark -r sample.pcap -Y "tcp.flags.reset==1"
+
