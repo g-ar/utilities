@@ -26,3 +26,10 @@ done
 # 5. list all reset flags in packet capture
 tshark -r sample.pcap -Y "tcp.flags.reset==1"
 
+# 6. map/disable a key in xorg, e.g. disable up button
+xmodmap -e 'keycode 111=' # disable
+xmodmap -e 'keycode 111=Up' # enable
+
+# 7. show keyboard events
+xev -event keyboard
+
