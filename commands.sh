@@ -33,3 +33,9 @@ xmodmap -e 'keycode 111=Up' # enable
 # 7. show keyboard events
 xev -event keyboard
 
+# 8. better and faster compression
+tar --zstd -cf directory.tar.zst directory/ # compress
+tar --zstd -xf directory.tar.zst            # decompress
+
+
+
